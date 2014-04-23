@@ -11,7 +11,7 @@ gitreceived is part of Flynn, but if you want to build it as a standalone binary
 ```
 mkdir -p tmp
 cd tmp && git clone https://github.com/flynn/gitreceived
-GOPATH=. cd tmp/gitreceived && godep go build -o ~/gitreceived
+GOPATH=. cd gitreceived && godep go build -o ~/gitreceived
 rm -rf tmp
 ```
 
