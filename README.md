@@ -4,6 +4,16 @@ An SSH server made specifically for accepting git pushes that will trigger an au
 
 This is a more advanced, standalone version of [gitreceive](https://github.com/progrium/gitreceive).
 
+## Building gitreceived
+
+gitreceived is part of Flynn, but if you want to build it as a standalone binary, make sure you have [Godep](https://github.com/tools/godep) installed and accessible in your path; ensure $GOPATH is set to something (e.g. your home), then you can something like this (tune at your preference):
+
+```
+git clone https://github.com/flynn/gitreceived
+cd gitreceived
+GOPATH=`pwd` godep go build -o ./gitreceived
+```
+
 ## Using gitreceived
 
 ```
